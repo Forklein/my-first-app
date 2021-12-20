@@ -2,7 +2,11 @@ import { useState, useEffect } from 'react';
 
 const Clock = () => {
     const dateIni = new Date();
+
+    //useState
     const [date, setDate] = useState(dateIni);
+
+    //useEffect
     useEffect(() => {
         const interval = setInterval(() => {
             const time = date.getTime();
